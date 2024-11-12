@@ -13,6 +13,7 @@ try
 {
     logger.Info("Starting web application");
     var builder = WebApplication.CreateBuilder(args);
+
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
 
